@@ -9,12 +9,12 @@ const font=Poppins({
 
 export const Logo=()=>{
     return(
-        <div className="flex flex-col items-center gap-y-4">
+        <div className={cn("flex flex-col items-center gap-y-4",font.className)}>
             <div className="bg-white rounded-full p-1">
                 <Image src="/spooky.svg" alt="streami.io logo" width="80" height="80"/>
             </div>
             <div className="flex flex-col items-center">
-                <p className={cn("text-xl font-semibold",font.className)}>
+                <p className="text-xl font-semibold">
                     Streami.io
                 </p>
             </div>
